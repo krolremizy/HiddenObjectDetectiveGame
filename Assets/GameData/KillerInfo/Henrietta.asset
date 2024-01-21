@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5926022c3fffc944d80dbf93db89b484, type: 3}
+  m_Name: Henrietta
+  m_EditorClassIdentifier: 
+  isKiler: 1
+  inkDialogue: {fileID: 4900000, guid: 20addf097b98f4b46bb7527564481819, type: 3}
+  NpcName: Henrietta Thornton
+  NpcAvatar: {fileID: 21300000, guid: c54cb485332e59844bf865a360d12302, type: 3}
+  NpcAvatarSmall: {fileID: 21300000, guid: 8b4150a1584e11049bfd11146252475a, type: 3}
+  Explanation: "Henrietta jest moderc\u0105. Wskaz\xF3wki, kt\xF3re wskazywa\u0142y
+    na jej win\u0119, to fakt, \u017Ce stwierdza, \u017Ce nienawidzi plotkowa\u0107,
+    mimo i\u017C Ania potwierdza, \u017Ce Henrietta przychodzi\u0142a do Eleanor
+    na kaw\u0119 i plotki. Poza tym gdy zapytana o r\u0119kawiczk\u0119, wspomina
+    o miejscu, w kt\xF3rym j\u0105 znaleziono, mimo \u017Ce nie powinna tego wiedzie\u0107.
+    Do tego m\xF3wi, \u017Ce Eleanor zna\u0142a Miguela bardzo kr\xF3tko, a z zezna\u0144
+    pozosta\u0142ych dowiadujemy si\u0119, \u017Ce znali si\u0119 ponad p\xF3\u0142tora
+    roku."
