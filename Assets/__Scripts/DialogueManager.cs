@@ -68,10 +68,31 @@ public class DialogueManager : MonoBehaviour
 
     public void EnterDialogue()
     {
+        if (inkFile == null)
+            return;
         currentStory = new Story(inkFile.text);
         variables = new DialogueVariables();
         variables.StartListening(currentStory);
         ContinueStory();
+    }
+
+    public void Refresh()
+    {
+        EnterDialogue();
+
+        if (inkFile == null)
+            return;
+
+        if (currentStory == null) 
+            return;
+
+        while (currentStory.canContinue)
+        {
+            DialogueText.text = currentStory.Continue();
+            DisplayChoices();
+        }
+        ExitDialogue();
+        EnterDialogue();
     }
 
     private void ContinueStory()
@@ -89,6 +110,7 @@ public class DialogueManager : MonoBehaviour
 
     public void ExitDialogue()
     {
+        if(currentStory == null) return;
         DialogueText.text = "";
         gameObject.SetActive(false);
         variables.StopListening(currentStory);

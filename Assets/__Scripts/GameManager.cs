@@ -35,6 +35,15 @@ public class GameManager : Singleton<GameManager>
         verdictButton.onClick.AddListener(() => SceneLoader.Instance.LoadScene(SceneEnum.ChooseKiller));
     }
 
+    public void RefreshDialogues()
+    {
+        foreach(Room room in rooms) {
+
+            room.roomEssentials.roomDialogue.Init(room.roomConfig);
+            room.roomEssentials.roomDialogue.Refresh();
+        }
+    }
+
     public void NextRoom()
     {
         currentRoom = (currentRoom + 1) % rooms.Count;

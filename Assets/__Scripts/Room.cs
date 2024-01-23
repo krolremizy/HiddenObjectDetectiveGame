@@ -31,8 +31,6 @@ public class Room : MonoBehaviour
             item.OnPickUp += () => Item_OnPickUp(item);
         }
         );
-
-
     }
 
     private void Item_OnPickUp(Item item)
@@ -85,6 +83,8 @@ public class Room : MonoBehaviour
         if (!clue.isClue)
             return;
 
+
+
         RectTransform itemRectTransform = clue.GetComponent<RectTransform>();
         RectTransform npcTransform = roomEssentials.NpcButton.GetComponent<RectTransform>();
 
@@ -110,6 +110,8 @@ public class Room : MonoBehaviour
         allCluesFound = true;
         GameManager.Instance.EndGameCheck();
         roomEssentials.exclamationMark.gameObject.SetActive(false);
+
+        GameManager.Instance.RefreshDialogues();
     }
 
     void SpawnClue()

@@ -37,7 +37,7 @@ W czym mogę pomóc?
 
 === option2 ===
 * [Zapytaj o gości] Zna pan pozostałych gości?
-    Nie za dobrze. Kojarzę jedynie panią Thornton, starszą sąsiadkę Eleanor. Przyjaźniły się wiele lat, to były dobre przyjaciółki. Mówiły sobie o wszystkim.
+    Kojarzę, że pani Thornton jest starszą sąsiadką Eleanor. Przyjaźniły się wiele lat, to były dobre przyjaciółki. Mówiły sobie o wszystkim. Natomiast Ania jest rodziną Eleanor. Często bywała tu w domu.
     -> option2
 * [Zapytaj o podejrzenia] Czy zaobserował pan może coś niepokojącego? Może pan coś widział?
     Ta młoda dama... Wydawała się bardzo niespokojna i w trakcie kolacji wychodziła kilkukrotnie do salonu.

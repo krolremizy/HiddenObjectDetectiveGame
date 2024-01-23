@@ -37,7 +37,11 @@ public class RoomEssentials : MonoBehaviour
     {
         roomDialogue.Init(roomConfig);
         roomDialogue.gameObject.SetActive(false);
-        NpcButton.onClick.AddListener(() => roomDialogue.gameObject.SetActive(true));
+        NpcButton.onClick.AddListener(() => {
+            roomDialogue.Init(roomConfig);
+            roomDialogue.Refresh();
+            roomDialogue.gameObject.SetActive(true); 
+        });
     }
 
     private void SetUpNPC()
